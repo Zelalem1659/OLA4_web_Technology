@@ -1,0 +1,52 @@
+Top
+- H1: React Blog Website
+
+Section 1: Navigation
+- Home link
+- Blog link
+- New Post link
+
+Page 1: Home
+- Welcome message
+- Short description of the app
+- Quick buttons to view posts or create a new post
+- Spotlight area showing the latest blog entry
+
+Page 2: Blog
+- Heading for the blog archive
+- List of blog posts
+- Each post shows title, author, content, and timestamp
+- Delete button for each post
+- Sidebar notes area explaining actions/state behavior
+
+Page 3: New Post
+- Form with title input
+- Form with author input
+- Form with content textarea
+- Submit button
+- Validation/error message area
+- Success message after submission
+
+Buttons/Actions Area
+- Submit Post button
+- Delete Post button
+- Navigation buttons on the Home page
+
+Display Area for Blog Post Details
+- Full title
+- Author
+- Content
+- Timestamp
+
+Bottom
+- Footer with course/project note
+
+Reflection
+1. What changed between your Stage 1 outline and your final implementation? Why did you change it?
+I kept the same main structure from the outline, but I added a spotlight card on the Home page and a notes panel beside the Blog and New Post pages. Those changes made the layout feel more complete and helped me present the required actions and post details more clearly.
+
+2. What was the hardest part to implement correctly, and why?
+The hardest part was keeping the blog data in one place while still using multiple pages. I had to make sure the posts state stayed in App.jsx and was passed down through props so adding and deleting posts updated the correct page immediately.
+
+3. Describe one mistake you made and how you fixed it.
+One mistake I made was not trimming the form input values before validation, which could allow users to submit spaces instead of real text. I fixed it by using trim() on the title, author, and content fields before checking whether the form was valid.
